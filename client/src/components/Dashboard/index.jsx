@@ -25,8 +25,6 @@ const Summary = () => {
         SummaryCount()
     }, [])
 
-    console.log(data)
-
     return (
         <>
 
@@ -45,7 +43,7 @@ const Summary = () => {
                         <Button sx={{ fontSize: '.7rem', backgroundColor: '#4ba94f', textTransform: 'capitalize' }} variant='contained' color='success' size='small' disableElevation>go now</Button>
                     </Box>
                 </Box>
-                <Box component={'div'} sx={{ padding: 3, margin: 2, background: 'url("https://plus.unsplash.com/premium_photo-1673816936949-5cb8632638b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=731&q=80")', width: '30%', borderRadius: '10px', backgroundSize: 'cover', opacity: '.5', filter: 'brightness(0.5)' }}>
+                <Box component={'div'} sx={{ padding: 3, margin: 2, background: 'url("/upload/dashboard.jpg")', width: '30%', borderRadius: '10px', backgroundSize: 'cover', opacity: '.5', filter: 'brightness(0.5)' }}>
                     <Typography sx={{ color: 'white', fontWeight: 'bold', filter: 'brightness(0)' }} variant='h5'>
                         Minimal UI
                     </Typography>

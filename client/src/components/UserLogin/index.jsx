@@ -30,7 +30,7 @@ const UserLogin = () => {
       setToken(data.Token)
       enqueueSnackbar('Login success', { variant: 'success' });
       setLoading(false)
-      navigate(0)
+      window.location.href='/'
     } catch (err) {
       enqueueSnackbar( err.response.data.Message , { variant: 'error' });
       setLoading(false)

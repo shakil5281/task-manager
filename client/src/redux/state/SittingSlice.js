@@ -1,15 +1,16 @@
 import {createSlice} from "@reduxjs/toolkit";
+import Loding from "../../components/layout/Loding";
 export const settingsSlice=createSlice({
     name:'settings',
     initialState:{
-        loader: 'loading'
+        loader: null
     },
     reducers:{
         ShowLoader:(state)=>{
-            state.loader= null
+            state.loader= <Loding />
         },
         HideLoader:(state)=>{
-            state.loader='loading'
+            state.loader= null
         }
     }
 })

@@ -13,8 +13,13 @@ import Users from "../pages/Users";
 import Login from '../pages/Login'
 import SignUp from '../pages/Signup'
 import Recovery from '../pages/Recovery'
+import OTPverify from '../pages/OTPverify'
+import ChangePasswordOTP from '../pages/ChangePasswordOTP'
 import DeleteTask from "../hooks/DeleteTask";
 import { getToken } from "../helper/sessionStorege";
+import Profile from "../pages/Profile";
+import Logout from "../pages/profile/Logout";
+import ProfileDashboard from "../pages/profile/index"
 
 
 
@@ -25,7 +30,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: getToken() ? <Dashboard /> : <Navigate replace to={"/users/login"} />
+                element: getToken() ? <Dashboard /> : <Navigate replace to={"/users/login"} /> 
             },
             {
                 path: '/create',
@@ -73,7 +78,33 @@ export const router = createBrowserRouter([
             {
                 path: '/users/recovery',
                 element: !getToken() ? <Recovery /> : <Navigate replace to={"/"} />
-            }
+            },
+            {
+                path: '/users/otpverification',
+                element: !getToken() ? <OTPverify /> : <Navigate replace to={"/"} />
+            },
+            {
+                path: '/users/changepassword',
+                element: !getToken() ? <ChangePasswordOTP /> : <Navigate replace to={"/"} />
+            },
+        ]
+    },
+    {
+        path: '/profile',
+        element: <Profile /> ,
+        children : [
+            {
+                path: '/profile/',
+                element: <ProfileDashboard />
+            },
+            {
+                path: '/profile/logout',
+                element: <Logout />
+            },
+            {
+                path: '*',
+                element:  getToken() ? <Error /> : <Navigate replace to={"/users/login"} />
+            },
         ]
     }
 ])

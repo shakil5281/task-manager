@@ -16,6 +16,9 @@ const ReadTask = () => {
         try{
             const {data} = await axios.get('/read/' + status, AxiosHeader)
             settask(data.data)
+            if(status === 200){
+                DataTask(url)
+            }
         }catch(err){
             console.error(err)
         }
