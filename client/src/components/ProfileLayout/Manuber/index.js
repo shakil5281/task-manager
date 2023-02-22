@@ -13,7 +13,7 @@ import ReadProfile from '../../../hooks/ReadProfile';
 const Navber = () => {
     const styles = {
         mainContainer: {
-            width: { lg: '85%', md: '75%' },
+            width: { lg: '80%', md: '75%' },
             backgroundColor: '#fff',
             boxShadow: 'none',
             paddingTop: 4,

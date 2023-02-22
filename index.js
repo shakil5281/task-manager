@@ -7,12 +7,13 @@ require('dotenv').config()
 const PORT = process.env.PORT || 8000
 
 // Database connection
+mongoose.set('strictQuery', false);
 mongoose.connect(process.env.URL)
     .then(() =>console.log("Database Connection Success"))
     .catch((err) =>console.log(err))
 
 
 
-app.listen(()=>{
+app.listen(PORT, ()=>{
     console.log(`server start on ${PORT}`)
 })

@@ -11,6 +11,7 @@ try{
     next()
     }
      catch(err) {
+        console.log(err)
         next("Authentication failure!");
     }
 };

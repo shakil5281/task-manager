@@ -12,7 +12,7 @@ const Sidebar = () => {
     mainContainer: {
       position: 'fixed',
       height: '100vh',
-      width: { lg: '15%', md: '25%', sm: '0' },
+      width: { lg: '20%', md: '25%', sm: '0' },
       borderRight: '1px dotted #50506491',
       display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' }
 

@@ -13,12 +13,11 @@ import ReadProfile from '../../../hooks/ReadProfile';
 const Navber = () => {
     const styles = {
         mainContainer: {
-            width: { lg: '85%', md: '75%' },
+            width: { lg: '80%', md: '75%' },
             backgroundColor: '#fff',
             boxShadow: 'none',
-            paddingTop: 4,
-            marginTop: 1
-
+            padding: 1,
+            marginTop: {xs: 0,lg: 1}
         }
     }
 
@@ -37,7 +36,7 @@ const Navber = () => {
     };
     return (
         <>
-            <Box sx={{ flexGrow: 1, position: 'fixed', marginTop: 2 }}>
+            <Box sx={{ flexGrow: 1, position: 'fixed'}}>
                 <AppBar sx={styles.mainContainer}>
                     <Toolbar>
                         <Box sx={{ flexGrow: 5 }}>

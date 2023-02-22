@@ -53,7 +53,7 @@ export const navLinks = [
 
 export const manuLinks = [
     {
-        id: '/profile',
+        id: '/profile/dashboard',
         title: 'profile',
         icon: <Person4Icon />
     },
@@ -67,7 +67,7 @@ export const manuLinks = [
 export const profileLinks = [
 
     {
-        id: '/profile',
+        id: '/profile/dashboard',
         title: 'User Profile',
         icon: <Person4Icon />
     },

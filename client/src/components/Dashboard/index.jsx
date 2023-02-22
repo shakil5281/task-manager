@@ -29,7 +29,7 @@ const Summary = () => {
         <>
 
             <Box component={'div'} sx={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
-                <Box component={'div'} sx={{ padding: 3, margin: 2, background: '#6cffad54', width: '60%', borderRadius: '10px' }}>
+                <Box component={'div'} sx={{ padding: 3, margin: 2, background: '#6cffad54', width: {xs: '100%', lg: '60%'}, borderRadius: '10px' }}>
                     <Typography sx={{ color: 'gray', fontWeight: 'bold' }} variant='h6'>
                         Welcome Back!
                     </Typography>
@@ -43,7 +43,7 @@ const Summary = () => {
                         <Button sx={{ fontSize: '.7rem', backgroundColor: '#4ba94f', textTransform: 'capitalize' }} variant='contained' color='success' size='small' disableElevation>go now</Button>
                     </Box>
                 </Box>
-                <Box component={'div'} sx={{ padding: 3, margin: 2, background: 'url("/upload/dashboard.jpg")', width: '30%', borderRadius: '10px', backgroundSize: 'cover', opacity: '.5', filter: 'brightness(0.5)' }}>
+                <Box component={'div'} sx={{ padding: 3, margin: 2, background: 'url("/upload/dashboard.jpg")', width: {xs: '100%', lg:'30%'}, borderRadius: '10px', backgroundSize: 'cover', opacity: '.5', filter: 'brightness(0.5)' }}>
                     <Typography sx={{ color: 'white', fontWeight: 'bold', filter: 'brightness(0)' }} variant='h5'>
                         Minimal UI
                     </Typography>
@@ -53,7 +53,7 @@ const Summary = () => {
                 </Box>
                 {
                     Array.from(data).map((item, i) => (
-                        <Box key={i.toString()} component={'div'} sx={{ padding: 2, boxShadow: '2px 12px 15px 0px #46464612', margin: 2, background: 'white', width: '20%', borderRadius: '10px' }}>
+                        <Box key={i.toString()} component={'div'} sx={{ padding: 2, boxShadow: '2px 12px 15px 0px #46464612', margin: 2, background: 'white', width: {xs: '100%', lg: '20%'}, borderRadius: '10px' }}>
                             <Typography sx={{ color: 'gray', textAlign: 'center', marginTop: 1, fontWeight: '600' }} variant='body2'>Total {item._id}</Typography>
                             <Typography sx={{ color: 'gray', textAlign: 'center', marginTop: 1, fontWeight: '600', fontSize: '2.3rem' }} variant='h4'>
                                 {item.sum}

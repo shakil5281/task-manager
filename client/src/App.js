@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Layout />
-      <Box sx={{ position: 'absolute', paddingLeft: '20%', paddingTop: '7%', zIndex: -1, width: '100%' }}>
+      <Box sx={{ position: 'absolute', paddingLeft: {xs: 0,lg:'25%'}, paddingTop: {xs: '20%', lg: '9%'}, zIndex: -1, width: '100%' }}>
         <Outlet />
       </Box>
     </>

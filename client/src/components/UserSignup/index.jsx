@@ -47,7 +47,7 @@ const UserSignup = () => {
 
   return (
     <Box component={'div'} sx={{ display: 'flex', height: '100%', position: 'absolute', width: '100%' }}>
-      <Box component={'div'} sx={{ width: '75%', background: 'whitesmoke' }}>
+      <Box component={'div'} sx={{ width: {xs: '0',lg: '65%'}, background: 'whitesmoke', display: {xs:'none',lg: 'block'} }}>
         <Stack sx={{ margin: '0 auto', justifyContent: 'center', display: 'block', padding: 6 }}>
           <IconButton LinkComponent={Link} to='/' size='large' color='primary'>
             <AirplayTwoToneIcon />
@@ -56,12 +56,12 @@ const UserSignup = () => {
             Manage the job more effectively with Minimal
           </Typography>
           <Box>
-            <img style={{ margin: '0 auto', justifyContent: 'center', display: 'flex' }} src="https://minimals.cc/assets/illustrations/illustration_dashboard.png" alt="loginPage" />
+            <img style={{ margin: '0 auto', justifyContent: 'center', display: 'flex', width: '500px' }} src="/upload/illustration_dashboard.png" alt="loginPage" />
           </Box>
         </Stack>
       </Box>
-      <Box component={'div'} sx={{ width: '25%' }}>
-        <Paper component={'form'} onSubmit={handleSubmit} elevation={0} sx={{ marginTop: 30, padding: 6 }}>
+      <Box component={'div'} sx={{ width: {xs: '100%', lg: '35%'} }}>
+        <Paper component={'form'} onSubmit={handleSubmit} elevation={0} sx={{ marginTop: {xs: 3, lg: 12}, padding: {xs: 2, lg:6} }}>
           <Typography sx={{ fontWeight: '600', margin: '25px 0' }} variant='h5'>
             Get started absolutely free.
           </Typography>

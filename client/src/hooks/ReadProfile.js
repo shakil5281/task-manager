@@ -5,7 +5,6 @@ import { getToken } from '../helper/sessionStorege'
 
 const AxiosHeader = { headers: { "token": getToken() } }
 
-
 const ReadProfile = () => {
     const params = useParams()
     const url = params.status

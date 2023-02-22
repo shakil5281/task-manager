@@ -54,7 +54,7 @@ const OTPSentVerify = () => {
           <AirplayTwoToneIcon />
         </IconButton>
       </Box>
-      <Paper component={'form'} onSubmit={handleSubmit} sx={{ width: '400px', margin: '0 auto', paddingTop: 5 }} elevation={0}>
+      <Paper component={'form'} onSubmit={handleSubmit} sx={{ width: '400px', margin: '0 auto', padding: 2 }} elevation={0}>
         <Typography variant='h1' sx={{ textAlign: 'center' }}>
           <MdVerifiedUser />
         </Typography>
