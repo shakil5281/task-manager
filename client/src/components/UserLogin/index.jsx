@@ -51,7 +51,7 @@ const UserLogin = () => {
 
   return (
     <Box component={'div'} sx={{ display: 'flex', height: '100%', position: 'absolute', width: '100%' }}>
-      <Box component={'div'} sx={{ width: {xs: '0', lg: '70%' }, background: 'whitesmoke', display: {xs:'none',lg: 'block'} }}>
+      <Box component={'div'} sx={{ width: {xs: '0', lg: '70%', xl: '75%' }, background: 'whitesmoke', display: {xs:'none',lg: 'block'} }}>
         <Stack sx={{ margin: '0 auto', justifyContent: 'center', display: 'block', padding: 6 }}>
           <IconButton LinkComponent={Link} to='/' color='primary' size='large'>
             <AirplayTwoToneIcon />
@@ -60,12 +60,12 @@ const UserLogin = () => {
             Welcome back
           </Typography>
           <Box component={'div'}>
-            <img style={{ margin: '0 auto', justifyContent: 'center', display: 'flex', width: '500px' }} src="/upload/illustration_dashboard.png" alt="loginPage" />
+            <img style={{ margin: '0 auto', justifyContent: 'center', display: 'flex', width: {lg: '500px', xl: '700px'} }} src="/upload/illustration_dashboard.png" alt="loginPage" />
           </Box>
         </Stack>
       </Box>
-      <Box component={'div'} sx={{ width: {xs: '100%', lg: '30%'} }}>
-        <Paper component={'form'} onSubmit={handleSubmit} elevation={0} sx={{ marginTop: {xs: 5,lg: 10}, padding: {xs: 2, lg: 6} }}>
+      <Box component={'div'} sx={{ width: {xs: '100%', lg: '30%', xl: '25%'} }}>
+        <Paper component={'form'} onSubmit={handleSubmit} elevation={0} sx={{ marginTop: {xs: 5,lg: 10, xl: 50}, padding: {xs: 2, lg: 6} }}>
           <Typography sx={{ fontWeight: '600', margin: '25px 0' }} variant='h5'>
             Sign in to Minimal
           </Typography>

@@ -31,7 +31,7 @@ router.get('/crud/ReadDate',AuthVeryfy, taskController.ReadDate)
 router.post('/signup', userController.register)
 router.post('/signin', userController.login)
 router.post('/update',AuthVeryfy, userController.passwordUpdate)
-router.post('/profile',AuthVeryfy, userController.profileupdate)
+router.post('/profileupdate',AuthVeryfy, userController.profileupdate)
 
 
 router.post('/recovery/:email', SentEmailController.RecoverVerifyEmail)
